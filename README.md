@@ -4,9 +4,9 @@
 
 `php-unserialize-lib`是一个根据 `php`反序列化工具 [@PHPGGC](https://github.com/ambionics/phpggc) 对应编写而来的反序列化靶场，提供 `PHPGGC`中大部分反序列化漏洞环境，省去了搭建环境的麻烦。
 
-此外，还收集网上一些其他常用框架的反序列化链，并对收录的所有反序列化链进行漏洞分析复现，并给出自己的 `poc`，以供参考。
+此外，还收集网上一些其他常用框架的反序列化链，对收录的所有反序列化链进行漏洞分析复现，并给出自己的 `poc`，以供参考。
 
-`php-unserialize-lib` 的结构参考了 [@vulhub](https://github.com/vulhub/vulhub) ，省去了不少麻烦。
+`php-unserialize-lib` 参考了 [@vulhub](https://github.com/vulhub/vulhub) ，省去了不少麻烦。
 
 ## List
 
@@ -15,8 +15,8 @@
 #### PHPGGC
 
 - [x] CodeIgniter4
-  - [x] RCE1
-  - [x] RCE2
+  - [x] RCE1（4.0.0-rc.4）
+  - [x] RCE2（4.0.4）
 - [ ] Doctrine
   - [ ] FW1
   - [ ] FW2
@@ -34,11 +34,11 @@
   - [ ] FW1
 - [ ] Laravel
   - [ ] RCE1
-  - [ ] RCE2
-  - [ ] RCE3
-  - [ ] RCE4
-  - [ ] RCE5
-  - [ ] RCE6
+  - [x] RCE2（5.5.39）
+  - [x] RCE3（5.5.39）
+  - [x] RCE4（5.5.39）
+  - [x] RCE5（5.8.30）
+  - [x] RCE6（5.5.39）
   - [ ] RCE7
 - [ ] Magento
   - [ ] FW1
@@ -86,7 +86,7 @@
   - [ ] FD1
 - [ ] ThinkPHP
   - [ ] FW1
-  - [x] FW2
+  - [x] FW2（5.0.3）
   - [ ] RCE1
 - [ ] WordPress/Dompdf
   - [ ] RCE1
@@ -125,16 +125,10 @@
 
 #### Other
 
-- [x] cakephp（这部分暂时不开放）
+- [x] CakePHP
   - [x] RCE1 （4.2.3）
   - [x] RCE2 （4.2.3）
 
-
-
-
-
-## Thanks
-
-- [PHPGGC](https://github.com/ambionics/phpggc)
-- [vulhub](https://github.com/vulhub/vulhub)
+- [x] ThinkPHP
+  - [x] RCE2（5.0.24）
 
