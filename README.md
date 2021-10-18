@@ -4,15 +4,17 @@
 
 `php-unserialize-lib`是一个根据 `php`反序列化工具 [@PHPGGC](https://github.com/ambionics/phpggc) 对应编写而来的反序列化靶场，提供 `PHPGGC`中大部分反序列化漏洞环境，省去了搭建环境的麻烦。
 
-此外，还收集网上一些其他常用框架的反序列化链，对收录的所有反序列化链进行漏洞分析复现，并给出自己的 `poc`，以供参考。
+此外，还将收集网上一些其他常用框架的反序列化链，对收录的所有反序列化链进行漏洞分析复现，并给出自己的 `poc`，以供参考。
 
-`php-unserialize-lib` 参考了 [@vulhub](https://github.com/vulhub/vulhub) ，省去了不少麻烦。
+`php-unserialize-lib` 搭建环境部分参考了 [@vulhub](https://github.com/vulhub/vulhub) ，省去了不少麻烦。
 
 ## List
 
-以下是可用环境的列表，包括 `PHPGGC` 中的 和 自己收集的一些反序列化漏洞的环境，括号中的是漏洞环境使用的应用版本
+以下是可用环境的列表，包括 `PHPGGC` 的和自己收集的一些反序列化漏洞的环境，括号中的是漏洞环境使用的应用版本，含有 `add` 标志的是 `phpggc` 中没有的链，含有 `unsuccess` 标志的是复现过，但是没有复现成功的。
 
-#### PHPGGC
+- [x] CakePHP
+  - [x] RCE1 （4.2.3）
+  - [x] RCE2 （4.2.3, add）
 
 - [x] CodeIgniter4
   - [x] RCE1（4.0.0-rc.4）
@@ -33,13 +35,13 @@
   - [ ] FD1
   - [ ] FW1
 - [ ] Laravel
-  - [ ] RCE1
+  - [ ] RCE1（unsuccess）
   - [x] RCE2（5.5.39）
   - [x] RCE3（5.5.39）
   - [x] RCE4（5.5.39）
   - [x] RCE5（5.8.30）
   - [x] RCE6（5.5.39）
-  - [ ] RCE7
+  - [ ] RCE7（unsuccess）
 - [ ] Magento
   - [ ] FW1
   - [ ] SQLI1
@@ -85,9 +87,10 @@
 - [ ] TCPDF
   - [ ] FD1
 - [ ] ThinkPHP
-  - [ ] FW1
+  - [ ] FW1（unsuccess）
   - [x] FW2（5.0.3）
-  - [ ] RCE1
+  - [ ] RCE1（unsuccess）
+  - [x] RCE2（5.0.24）
 - [ ] WordPress/Dompdf
   - [ ] RCE1
   - [ ] RCE2
@@ -121,14 +124,4 @@
   - [ ] RCE2
   - [ ] RCE3
   - [ ] RCE4
-
-
-#### Other
-
-- [x] CakePHP
-  - [x] RCE1 （4.2.3）
-  - [x] RCE2 （4.2.3）
-
-- [x] ThinkPHP
-  - [x] RCE2（5.0.24）
 

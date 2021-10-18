@@ -48,7 +48,7 @@ class Home extends BaseController
 
 ### 漏洞 EXP
 
-暂未开放
+[codeigniter4_unserialize_rce2](./codeigniter4_unserialize_rce2.php)
 
 
 
