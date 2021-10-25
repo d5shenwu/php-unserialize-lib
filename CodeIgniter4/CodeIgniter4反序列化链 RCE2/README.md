@@ -38,7 +38,7 @@ class Home extends BaseController
 
 ### 漏洞分析
 
-暂未开放
+https://forum.butian.net/share/784
 
 ### 漏洞复现
 
