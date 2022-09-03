@@ -6,7 +6,7 @@
 
 此外，还将收集网上一些其他常用框架的反序列化链，对收录的所有反序列化链进行漏洞分析复现，并给出自己的 `poc`，以供参考。
 
-`php-unserialize-lib` 搭建环境部分参考了 [@vulhub](https://github.com/vulhub/vulhub) ，省去了不少麻烦。
+`php-unserialize-lib` 搭建环境部分参考了 [@vulhub](https://github.com/vulhub/vulhub) 。
 
 ## List
 
