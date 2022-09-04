@@ -83,6 +83,8 @@ protected function parseEventAndPayload($event, $payload)
 
 ## 0x04 链接
 
+环境与 `exp` 都可以在如下链接获取
+
 ### GitHub
 
 https://github.com/N0puple/php-unserialize-lib
@@ -95,7 +97,7 @@ https://n0puple.gitbook.io/php-unserialize-lib/
 
 公众号搜索：安全漏洞复现
 
-扫码关注：
+扫码持续关注：
 
 ![](https://gitee.com/N0puple/picgo/raw/master/img/qrcode_for_gh_a41358b842dd_430.jpg)
 
