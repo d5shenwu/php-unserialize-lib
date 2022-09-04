@@ -2,7 +2,7 @@
 
 ## 0x00 Introduction
 
-`php-unserialize-lib`是一个根据 `php`反序列化工具 [@PHPGGC](https://github.com/ambionics/phpggc) 对应编写而来的反序列化靶场，提供 `PHPGGC`中大部分反序列化漏洞环境，省去了搭建环境的麻烦。
+`php-unserialize-lib`是一个反序列化靶场，提供 [@PHPGGC](https://github.com/ambionics/phpggc) 中大部分反序列化漏洞环境与分析。
 
 此外，还将收集网上一些其他常用框架的反序列化链，对收录的所有反序列化链进行漏洞分析复现，并给出自己的 `poc`，以供参考。
 
@@ -10,7 +10,7 @@
 
 ## 0x01 List
 
-以下是可用环境的列表，包括 `PHPGGC` 的和自己收集的一些反序列化漏洞的环境，括号中的是漏洞环境使用的应用版本。
+以下是可用环境与分析的列表，包括 `PHPGGC` 的和自己收集的一些反序列化漏洞的环境与分析。
 
 - [x] CakePHP
   - [x] RCE1 （4.2.3）
@@ -20,7 +20,7 @@
   - [x] RCE2（4.0.4）
 - [ ] Laravel
   - [ ] RCE1（unsuccess）
-  - [x] RCE2（5.5.39）
+  - [x] Laravel_5.4.0_8.6.9\_反序列化链_RCE1
   - [x] RCE3（5.5.39）
   - [x] RCE4（5.5.39）
   - [x] RCE5（5.8.30）
@@ -46,7 +46,7 @@ https://n0puple.gitbook.io/php-unserialize-lib/
 
 ## 0x03 公众号
 
-创建了一个公众号，长期更新反序列化链与漏洞复现相关知识
+创建了一个公众号，长期更新反序列化链与漏洞复现相关知识。
 
 公众号搜索：安全漏洞复现
 
