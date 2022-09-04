@@ -21,7 +21,7 @@
 - [ ] Laravel
   - [ ] RCE1（unsuccess）
   - [x] Laravel_5.4.0_8.6.9\_反序列化链_RCE1
-  - [x] RCE3（5.5.39）
+  - [x] Laravel_5.5.0_5.8.35\_反序列化链_RCE1
   - [x] RCE4（5.5.39）
   - [x] RCE5（5.8.30）
   - [x] RCE6（5.5.39）
