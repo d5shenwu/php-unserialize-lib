@@ -2,11 +2,9 @@
 
 ## 0x00 Introduction
 
-`php-unserialize-lib`是一个反序列化靶场，提供 [@PHPGGC](https://github.com/ambionics/phpggc) 中大部分反序列化漏洞环境与分析。
+`php-unserialize-lib`是一个反序列化靶场，提供 [@PHPGGC](https://github.com/ambionics/phpggc) 中大部分反序列化漏洞环境与分析，以及更准确的影响范围。
 
 此外，还将收集网上一些其他常用框架的反序列化链，对收录的所有反序列化链进行漏洞分析复现，并给出自己的 `poc`，以供参考。
-
-`php-unserialize-lib` 搭建环境部分参考了 [@vulhub](https://github.com/vulhub/vulhub) 。
 
 ## 0x01 List
 

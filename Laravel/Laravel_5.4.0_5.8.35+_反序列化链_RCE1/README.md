@@ -1,4 +1,8 @@
-## Laravel_5.5.0_5.8.35\_反序列化链_RCE1
+# Laravel_5.4.0_5.8.35+\_反序列化链_RCE1
+
+对应 `PHPGGC` 中的 `Laravel/RCE3` ，高版本将参数 `app` 改成了 `container` ，之后的文章会写一下。
+
+这是 `Laravel` 反序列化链系列的第三篇文章
 
 ## 0x00 漏洞环境
 
@@ -38,7 +42,9 @@ class TestController extends Controller
 
 ## 0x01 漏洞影响
 
-5.5.0 <= 5.8.35
+5.4.0 <= x <= 5.8.35+
+
+从 6.0.0 开始不可用
 
 ## 0x02 漏洞分析
 
@@ -57,7 +63,7 @@ public function __call($method, $parameters)
 }
 ```
 
-`$this->driver()` 执行后的返回值，指向 `$method` ，这里会执行 `$method` 方法，而 `$method` 值传进来的是 `dispatch` ，那么我们要像 Laravel_5.4.0_8.6.9\_反序列化链_RCE1 中一样，找可以命令执行的 `dispatch` 方法？当然不是，那写这条链子就没有意义了，这里我们可以跟进 `$this->driver()`
+`$this->driver()` 执行后的返回值，指向 `$method` ，这里会执行 `$method` 方法，而 `$method` 值传进来的是 `dispatch` ，那么我们要找可以命令执行的 `dispatch` 方法？当然不是，那写这条链子就没有意义了，这里我们可以跟进 `$this->driver()`
 
 ![](https://gitee.com/N0puple/picgo/raw/master/img/20220904221843.png)
 

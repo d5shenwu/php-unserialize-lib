@@ -1,4 +1,8 @@
-## Laravel_5.4.0_8.6.9\_反序列化链_RCE2
+# Laravel_5.4.0_9.3.6+\_反序列化链_RCE2
+
+对应 `PHPGGC` 中的 `Laravel/RCE4`，全版本通杀
+
+这是 `Laravel` 反序列化链系列的第五篇文章
 
 ## 0x00 漏洞环境
 
@@ -38,7 +42,7 @@ class TestController extends Controller
 
 ## 0x01 漏洞影响
 
-5.4.0 <= 8.6.9+
+5.4.0 <= x <= 9.3.6+
 
 ## 0x02 漏洞分析
 

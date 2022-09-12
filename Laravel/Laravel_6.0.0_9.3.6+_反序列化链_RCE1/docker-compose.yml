@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: n0puple/laravel:8.16.1
+    command: bash -c "service apache2 start && /bin/bash"
+    ports:
+      - "80:80"
+    tty: true
