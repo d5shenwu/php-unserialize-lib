@@ -10,25 +10,28 @@
 
 以下是可用环境与分析的列表，包括 `PHPGGC` 的和自己收集的一些反序列化漏洞的环境与分析。
 
-- [x] CakePHP
-  - [x] RCE1 （4.2.3）
-  - [x] RCE2 （4.2.3, add）
-- [x] CodeIgniter4
-  - [x] RCE1（4.0.0-rc.4）
-  - [x] RCE2（4.0.4）
+- [ ] CakePHP
+  - [ ] RCE1 （4.2.3）
+  - [ ] RCE2 （4.2.3, add）
+- [ ] CodeIgniter4
+  - [ ] RCE1（4.0.0-rc.4）
+  - [ ] RCE2（4.0.4）
 - [ ] Laravel
   - [ ] RCE1（unsuccess）
-  - [x] Laravel_5.4.0_8.6.9\_反序列化链_RCE1
-  - [x] Laravel_5.5.0_5.8.35\_反序列化链_RCE1
-  - [x] RCE4（5.5.39）
-  - [x] RCE5（5.8.30）
-  - [x] RCE6（5.5.39）
+  - [x] Laravel_5.4.0_5.8.35+\_反序列化链_RCE1
+  - [x] Laravel_5.4.0_8.6.12+\_反序列化链_RCE1
+  - [x] Laravel_5.4.0_9.3.6+\_反序列化链_RCE1
+  - [x] Laravel_5.4.0_9.3.6+\_反序列化链_RCE2
+  - [x] Laravel_5.6.0_9.3.6+\_反序列化链_RCE1
+  - [x] Laravel_6.0.0_9.3.6+\_反序列化链_RCE1
+  - [ ] RCE5（5.8.30）
+  - [ ] RCE6（5.5.39）
   - [ ] RCE7（unsuccess）
 - [ ] ThinkPHP
   - [ ] FW1（unsuccess）
-  - [x] FW2（5.0.3）
+  - [ ] FW2（5.0.3）
   - [ ] RCE1（unsuccess）
-  - [x] RCE2（5.0.24）
+  - [ ] RCE2（5.0.24）
 - [ ] ZendFramework
   - [ ] FD1
   - [ ] RCE1
