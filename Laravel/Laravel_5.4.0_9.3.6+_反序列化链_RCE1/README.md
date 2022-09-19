@@ -1,6 +1,6 @@
 # Laravel_5.4.0_9.3.6+\_反序列化链_RCE1
 
-无对应，根据 `PHPGGC` 中的 `Laravel/RCE5` 而写出来的，全版本通杀
+根据 `PHPGGC` 中的 `Laravel/RCE7` 或者 `Laravel/RCE9`而写出来的，全版本通杀
 
 这是 `Laravel` 反序列化链系列的第六篇文章
 
