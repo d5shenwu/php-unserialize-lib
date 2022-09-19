@@ -22,9 +22,9 @@
   - [x] Laravel_5.4.0_8.6.12+\_反序列化链_RCE1
   - [x] Laravel_5.4.0_9.3.6+\_反序列化链_RCE1
   - [x] Laravel_5.4.0_9.3.6+\_反序列化链_RCE2
+  - [x] Laravel_5.4.0_9.3.6+\_反序列化链_RCE3
   - [x] Laravel_5.6.0_9.3.6+\_反序列化链_RCE1
   - [x] Laravel_6.0.0_9.3.6+\_反序列化链_RCE1
-  - [ ] RCE5（5.8.30）
   - [ ] RCE6（5.5.39）
   - [ ] RCE7（unsuccess）
 - [ ] ThinkPHP
