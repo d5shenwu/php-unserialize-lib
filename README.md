@@ -17,7 +17,6 @@
   - [ ] RCE1（4.0.0-rc.4）
   - [ ] RCE2（4.0.4）
 - [ ] Laravel
-  - [ ] RCE1（unsuccess）
   - [x] Laravel_5.4.0_5.8.35+\_反序列化链_RCE1
   - [x] Laravel_5.4.0_8.6.12+\_反序列化链_RCE1
   - [x] Laravel_5.4.0_9.3.6+\_反序列化链_RCE1
@@ -25,8 +24,7 @@
   - [x] Laravel_5.4.0_9.3.6+\_反序列化链_RCE3
   - [x] Laravel_5.6.0_9.3.6+\_反序列化链_RCE1
   - [x] Laravel_6.0.0_9.3.6+\_反序列化链_RCE1
-  - [ ] RCE6（5.5.39）
-  - [ ] RCE7（unsuccess）
+  - [x] Laravel_7.0.0_9.3.6+\_反序列化链_RCE1
 - [ ] ThinkPHP
   - [ ] FW1（unsuccess）
   - [ ] FW2（5.0.3）
