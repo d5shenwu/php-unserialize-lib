@@ -7,7 +7,7 @@
 ## 0x00 漏洞环境
 
 ```
-https://github.com/N0puple/php-unserialize-lib
+https://github.com/d5shenwu/php-unserialize-lib
 ```
 
 进入对应的文件夹执行如下命令启动环境：
@@ -50,7 +50,7 @@ class TestController extends Controller
 
 所有位置都和上一条链子一摸一样，唯一的区别是使用到的变量名不一样，因此导致 `exp.php` 不通用，如下
 
-![](https://gitee.com/N0puple/picgo/raw/master/img/20220912213422.png)
+![](https://gitee.com/d5shenwu/picgo/raw/master/img/20220912213422.png)
 
 位于 `src/Illuminate/Support/Manager.php` ，控制 `$this->container` 的值即可
 
@@ -58,7 +58,7 @@ class TestController extends Controller
 
 通过 `exp.php` 生成 `payload` ，然后直接打，查看源码可以看到命令执行结果
 
-![](https://gitee.com/N0puple/picgo/raw/master/img/20220904224909.png)
+![](https://gitee.com/d5shenwu/picgo/raw/master/img/20220904224909.png)
 
 
 
@@ -68,17 +68,7 @@ class TestController extends Controller
 
 ### GitHub
 
-https://github.com/N0puple/php-unserialize-lib
+https://github.com/d5shenwu/php-unserialize-lib
 
-### GitBook:
 
-https://n0puple.gitbook.io/php-unserialize-lib/
-
-### 公众号
-
-公众号搜索：安全漏洞复现
-
-扫码持续关注：
-
-![](https://gitee.com/N0puple/picgo/raw/master/img/qrcode_for_gh_a41358b842dd_430.jpg)
 

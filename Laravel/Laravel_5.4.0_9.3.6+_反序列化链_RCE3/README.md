@@ -7,7 +7,7 @@
 ## 0x00 漏洞环境
 
 ```
-https://github.com/N0puple/php-unserialize-lib
+https://github.com/d5shenwu/php-unserialize-lib
 ```
 
 进入对应的文件夹执行如下命令启动环境：
@@ -57,17 +57,17 @@ public function __destruct()
 
 找到 `src/Illuminate/Bus/Dispatcher.php::dispatch($command)` 
 
-![](https://gitee.com/N0puple/picgo/raw/master/img/20220905205855.png)
+![](https://gitee.com/d5shenwu/picgo/raw/master/img/20220905205855.png)
 
 进入 `dispatchToQueue` 方法
 
-![](https://gitee.com/N0puple/picgo/raw/master/img/20220905224039.png)
+![](https://gitee.com/d5shenwu/picgo/raw/master/img/20220905224039.png)
 
 `$this->queueResolver` 可控，`$connection` 由 `$command` 得到，`$command` 也是可控的，因此都是可控的，因此可以执行任意类，我们找到如下位置
 
 `Mockery\Loader\EvalLoader::load(MockDefinition $definition)` 
 
-![](https://gitee.com/N0puple/picgo/raw/master/img/20220919143348.png)
+![](https://gitee.com/d5shenwu/picgo/raw/master/img/20220919143348.png)
 
 在这里，很容易知道，我们要找到一个 `MockDefinition` 的实例化对象，接下来进入 `getClassName` 方法
 
@@ -95,7 +95,7 @@ public function getCode()
 
 通过 `exp.php` 生成 `payload` ，然后直接打
 
-![](https://gitee.com/N0puple/picgo/raw/master/img/20220919113028.png)
+![](https://gitee.com/d5shenwu/picgo/raw/master/img/20220919113028.png)
 
 ## 0x04 链接
 
@@ -103,17 +103,7 @@ public function getCode()
 
 ### GitHub
 
-https://github.com/N0puple/php-unserialize-lib
+https://github.com/d5shenwu/php-unserialize-lib
 
-### GitBook:
 
-https://n0puple.gitbook.io/php-unserialize-lib/
-
-### 公众号
-
-公众号搜索：安全漏洞复现
-
-扫码持续关注：
-
-![](https://gitee.com/N0puple/picgo/raw/master/img/qrcode_for_gh_a41358b842dd_430.jpg)
 

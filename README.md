@@ -37,19 +37,5 @@
   - [ ] RCE3
   - [ ] RCE4
 
-## 0x02 GitBook
 
-这里给分析文档专门创建了一个 `GitBook` ，方便查询与观看
-
-https://n0puple.gitbook.io/php-unserialize-lib/
-
-## 0x03 公众号
-
-创建了一个公众号，长期更新反序列化链与漏洞复现相关知识。
-
-公众号搜索：安全漏洞复现
-
-扫码关注：
-
-![](https://gitee.com/N0puple/picgo/raw/master/img/qrcode_for_gh_a41358b842dd_430.jpg)
 
